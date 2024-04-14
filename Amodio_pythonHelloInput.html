@@ -1,0 +1,11 @@
+<py-script>
+input_box = Element("operandOne")
+operandOne = float(input_box.value)
+</py-script>
+Writing a value to a div
+This will take the value retrieved above, and write it into a HTML div with the ID "total"
+
+<py-script>
+result = Element("total")
+result.write("Hello!  The input says:" + str(operandOne))
+</py-script>
